@@ -34,5 +34,18 @@ public class TugasWeek6 {
             System.out.println("Mendapat predikat C (Kurang)");
         }
 
+        if (ipk >= 3.50) {
+            System.out.println("Selamat Anda memenuhi syarat menjadi asisten dosen");
+            System.out.println("1. Struktur Data");
+            System.out.println("2. Pemrograman Berorientasi Objek");
+            System.out.println("3. Basis Data");
+            System.out.println("4. Algoritma dan Pemrograman");
+            System.out.println("5. Rekayasa Perangkat Lunak");
+            System.out.print("Silahkan pilih mata kuliah yang dapat diajukan untuk posisi asisten (1/2/3/4/5): ");
+            int mataKuliah = nscan.nextInt();
+            
+        } else {
+            System.out.println("Maaf Anda belum memenuhi syarat menjadi asisten dosen");
+        }
     }
 }
