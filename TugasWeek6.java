@@ -10,14 +10,29 @@ public class TugasWeek6 {
         
         System.out.print("- Masukkan nilai Struktur Data: ");
         nilaiSData = nscan.nextInt();
+        if (nilaiSData > 100 || nilaiSData < 0 ) {
+            System.out.println("Nilai yang dimasukkan tidak valid");
+        }
         System.out.print("- Masukkan nilai Pemrograman Berorientasi Objek: ");
         nilaiPBObjek = nscan.nextInt();
+        if (nilaiPBObjek > 100 || nilaiPBObjek < 0 ) {
+            System.out.println("Nilai yang dimasukkan tidak valid");
+        }
         System.out.print("- Masukkan nilai Basis Data: ");
         nilaiBData = nscan.nextInt();
+        if (nilaiBData > 100 || nilaiBData < 0 ) {
+            System.out.println("Nilai yang dimasukkan tidak valid");
+        }
         System.out.print("- Masukkan nilai Algoritma dan Pemrograman: ");
         nilaiAlgoPemrograman = nscan.nextInt();
+        if (nilaiAlgoPemrograman > 100 || nilaiAlgoPemrograman < 0 ) {
+            System.out.println("Nilai yang dimasukkan tidak valid");
+        }
         System.out.print("- Masukkan nilai Rekayasa Perangkat Lunak: ");
         nilaiRPL = nscan.nextInt();
+        if (nilaiRPL > 100 || nilaiRPL < 0 ) {
+            System.out.println("Nilai yang dimasukkan tidak valid");
+        }
 
         rataRata = (nilaiSData + nilaiPBObjek + nilaiBData + nilaiAlgoPemrograman + nilaiRPL) / 5.0;
         System.out.println("Rata-rata nilai adalah: " + rataRata);
