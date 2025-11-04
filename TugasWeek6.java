@@ -43,9 +43,50 @@ public class TugasWeek6 {
             System.out.println("5. Rekayasa Perangkat Lunak");
             System.out.print("Silahkan pilih mata kuliah yang dapat diajukan untuk posisi asisten (1/2/3/4/5): ");
             int mataKuliah = nscan.nextInt();
-            
+            switch (mataKuliah) {
+                case 1:
+                    if (nilaiSData >= 75) {
+                        System.out.println("Anda eligible untuk menjadi Asisten Dosen pada mata kuliah Struktur Data");
+                    } else {
+                        System.out.println("Anda tidak memenuhi syarat untuk menjadi asisten mata kuliah");
+                    }
+                    break;
+                case 2:
+                    if (nilaiPBObjek >= 75) {
+                        System.out.println("Anda eligible untuk menjadi Asisten Dosen pada mata kuliah Pemrograman Berorientasi Objek");
+                    } else {
+                        System.out.println("Anda tidak memenuhi syarat untuk menjadi asisten mata kuliah");
+                    }
+                    break;
+                case 3:
+                    if (nilaiBData >= 75) {
+                        System.out.println("Anda eligible untuk menjadi Asisten Dosen pada mata kuliah Basis Data");
+                    } else {
+                        System.out.println("Anda tidak memenuhi syarat untuk menjadi asisten mata kuliah");
+                    }
+                    break;
+                case 4:
+                    if (nilaiAlgoPemrograman >= 75) {
+                        System.out.println("Anda eligible untuk menjadi Asisten Dosen pada mata kuliah Algoritma dan Pemrograman");
+                    } else {
+                        System.out.println("Anda tidak memenuhi syarat untuk menjadi asisten mata kuliah");
+                    }
+                    break;
+                case 5:
+                    if (nilaiRPL >= 75) {
+                        System.out.println("Anda eligible untuk menjadi Asisten Dosen pada mata kuliah Rekayasa Perangkat Lunak");
+                    } else {
+                        System.out.println("Anda tidak memenuhi syarat untuk menjadi asisten mata kuliah");
+                    }
+                    break;
+                default:
+                    System.out.println("Pilihan tidak valid");
+                    break;
+            }
         } else {
-            System.out.println("Maaf Anda belum memenuhi syarat menjadi asisten dosen");
+            System.out.println("Anda belum memenuhi syarat menjadi asisten dosen");
         }
+
+        nscan.close();
     }
 }
