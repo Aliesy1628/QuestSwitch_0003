@@ -6,6 +6,8 @@ public class TugasWeek6 {
         int nilaiSData, nilaiPBObjek, nilaiBData, nilaiAlgoPemrograman, nilaiRPL;
         double rataRata, ipk;
 
+        System.out.println("Nilai yang dimasukkan berada pada rentang 0 sampai 100");
+        
         System.out.print("- Masukkan nilai Struktur Data: ");
         nilaiSData = nscan.nextInt();
         System.out.print("- Masukkan nilai Pemrograman Berorientasi Objek: ");
