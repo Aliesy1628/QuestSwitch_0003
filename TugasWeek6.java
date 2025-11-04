@@ -17,5 +17,8 @@ public class TugasWeek6 {
         System.out.print("- Masukkan nilai Rekayasa Perangkat Lunak: ");
         nilaiRPL = nscan.nextInt();
 
+        rataRata = (nilaiSData + nilaiPBObjek + nilaiBData + nilaiAlgoPemrograman + nilaiRPL) / 5.0;
+        System.out.println("Rata-rata nilai adalah: " + rataRata);
+
     }
 }
