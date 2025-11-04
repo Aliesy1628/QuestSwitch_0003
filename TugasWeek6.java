@@ -20,5 +20,19 @@ public class TugasWeek6 {
         rataRata = (nilaiSData + nilaiPBObjek + nilaiBData + nilaiAlgoPemrograman + nilaiRPL) / 5.0;
         System.out.println("Rata-rata nilai adalah: " + rataRata);
 
+        ipk = rataRata / 25.0;
+        System.out.println("IPK Anda adalah: " + ipk);
+        if (ipk >= 3.75) {
+            System.out.println("Mendapat predikat A (Sangat Baik)");
+        } else if (ipk <= 3.74 && ipk >= 3.50) {
+            System.out.println("Mendapat predikat AB (Baik Sekali)");
+        } else if (ipk <= 3.49 && ipk >= 3.00) {
+            System.out.println("Mendapat predikat B (Baik)");
+        } else if (ipk <= 2.99 && ipk >= 2.50) {
+            System.out.println("Mendapat predikat BC (Cukup)");
+        } else if (ipk < 2.50) {
+            System.out.println("Mendapat predikat C (Kurang)");
+        }
+
     }
 }
